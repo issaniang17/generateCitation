@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="citation.js" defer></script>
+    <title>Citation Generate</title>
+</head>
+<body>
+    <div class="h-screen w-screen bg-orange-500 flex justify-center items-center">
+        <div class="bg-white rounded-lg p-3 w-[95%] flex flex-col gap-2 h-[80vh] items-center md:w-1/2">
+            <div class="bg-slate-300 p-2 rounded-lg text-center md:w-[90%]">
+                <input type="radio" name="citation" id="1" value="devPerso" checked class="radio">
+                <label for="citation">Developpement Personnel</label><br>
+                <input type="radio" name="citation" id="2" value="romantique" class="radio">
+                <label for="citation">Romantique</label>
+            </div>
+            <div id="result" class="bg-white p-3 w-full border border-slate-600 rounded-lg h-[90%] flex flex-col justify-evenly leading-relaxed text-center"></div>
+            <button id="generate" class="rounded-lg bg-slate-600 text-slate-200 w-[80%] p-2 md:w-[40%] animate-[bounce_1s_2]">Generer une Citation</button>
+        </div>
+    </div>
+</body>
+</html>
